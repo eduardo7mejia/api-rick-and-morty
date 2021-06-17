@@ -1,0 +1,162 @@
+//Estilo Global
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    background-color: #0F141A
+
+header
+    background: url('./images/rick-and-morty.jpg')
+    background-repeat: no-repeat
+    height: 60vh 
+    background-size: cover
+    background-attachment: fixed
+    backgrpund-position: center
+
+header:before
+    content: ""
+    width: 100%
+    height: 60vh
+    position: absolute
+    top: 0px
+    left: 0px
+
+    background-image: linear-gradient(90deg, #1f2937, #111927)
+    opacity: 0.7
+.container 
+    width: 80%
+    margin: auto
+    height: 100%
+.content 
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative 
+.title
+    padding: 10px
+    color: #82bf45
+    font-size: 5rem
+    font-family: shlop
+.text
+    color: #ffffff
+    font-size: 2rem
+    font-family: Nunito
+
+//Dar estilos a los Characters de la API
+.characters
+    margin-top: 2rem
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+.box 
+    width: 30%
+    background-color: #1f2937
+    margin: 10px
+    border-radius: 5px
+    box-shadow: 5px 4px #d9e5d6
+    display: flex
+    
+    .image
+        width: 50%
+    .character
+        width: 100%
+        margin: 10px
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .name
+        font-family: Shlop
+        font-size: 30px
+        color: #82bf45
+    .specie
+        text-align: center
+        padding: 5px
+        background-color: #364150
+        color: white
+        border-radius: 5px
+        text-transform: uppercase
+        font-size: 19px
+        margin: 3px 0px
+        font-family: Shlop
+    .status
+        text-align: center
+        color: white
+        padding: 4px
+        font-family: Nunito
+        background-color: #364150
+        border-radius: 4px
+        text-transform: uppercase
+        font-size: 9px
+        margin: 3px 0px
+    .gender
+        text-align: center
+        color: white
+        padding: 4px
+        font-family: Nunito
+        background-color: #364150
+        border-radius: 4px
+        text-transform: uppercase
+        font-size: 9px
+        margin: 3px 0px
+
+@media screen and ( max-width: 1588px  )
+    .container
+        width: 85%
+    .box
+        .character
+            .name
+                font-size: 35px
+
+@media screen and ( max-width: 1450px  )
+    .container
+        width: 90%
+@media screen and ( max-width: 1300px  )
+    .container
+        width: 95%
+@media screen and ( max-width: 1230px  )
+    .box
+        width: 35%
+    .container
+        width: 100%
+@media screen and ( max-width: 1080px  )
+    .box
+        width: 40%
+@media screen and ( max-width: 860px  )
+    .container
+        width: 80%
+    .box
+        width: 100%
+@media screen and ( max-width: 636px  )
+    .title
+        font-size: 4rem
+        padding: 5px
+@media screen and ( max-width: 534px  )
+    .text 
+        font-size: 15px
+    .container 
+        width: 90%
+@media screen and ( max-width: 444px  )
+    .container
+        width: 95%
+        .title
+            font-size: 3rem
+            text-align: center
+            padding: 4px
+@media screen and ( max-width: 416px  )            
+    .container
+        width: 100%
+        .title
+            font-size: 2rem
+            text-align: center
+            padding: 4px
+@media screen and ( max-width: 392px  )  
+    .title
+            font-size: 2rem
+@media screen and ( max-width: 378px  )  
+    .text
+            font-size: 13px
